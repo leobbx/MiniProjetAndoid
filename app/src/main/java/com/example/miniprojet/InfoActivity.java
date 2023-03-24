@@ -14,10 +14,10 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
-        TextView tv_test = (TextView) findViewById(R.id.tv_test);
+        TextView tv_test = (TextView) findViewById(R.id.tv_dechet);
         Button btn_retour = (Button) findViewById(R.id.btn_retour);
 
-        tv_test.setText(getIntent().getStringExtra("information"));
+        tv_test.setText(tv_test.getText()+" "+getIntent().getStringExtra("information"));
 
         btn_retour.setOnClickListener(new View.OnClickListener() {
             @Override
