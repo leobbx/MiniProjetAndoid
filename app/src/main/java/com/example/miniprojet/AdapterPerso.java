@@ -45,11 +45,11 @@ public class AdapterPerso extends BaseAdapter {
         View retour = previous;
 
         if (retour == null) {
-            retour = inflater.inflate(R.layout.listitemlayout,null);
+            retour = inflater.inflate(R.layout.liste_dechet,null);
         }
 
-        TextView text = (TextView) retour.findViewById(R.id.textView2);
-        ImageView img = (ImageView) retour.findViewById(R.id.imageView);
+        TextView text = (TextView) retour.findViewById(R.id.tv_label);
+        ImageView img = (ImageView) retour.findViewById(R.id.iv_img);
         text.setText(valeurs.get(pos));
         img.setImageResource(this.image);
 
