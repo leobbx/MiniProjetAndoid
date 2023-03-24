@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MiniProjet</string>
+    <string name="btn_ajout">Ajouter un déchet</string>
 </resources>
