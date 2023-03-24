@@ -2,8 +2,10 @@ package com.example.miniprojet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -35,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
                 valeurs.add(uniqueId);
 
                 adapter.notifyDataSetChanged();
+            }
+        });
+
+        lv_dechet.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
+                Intent intent = new Intent(MainActivity.this,InfoActivity.class);
+                intent.putExtra("information",valeurs.get(pos));
+                startActivity(intent);
             }
         });
     }
