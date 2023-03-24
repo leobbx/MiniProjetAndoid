@@ -7,60 +7,55 @@
 
     <EditText
         android:id="@+id/txt_nom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="107dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="267dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="@string/txt_nom"
         app:layout_constraintBottom_toTopOf="@+id/spin_matiere"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/spin_matiere"
-        android:layout_width="204dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="47dp"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="39dp"
         app:layout_constraintBottom_toTopOf="@+id/txtnb_temps"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_nom" />
+        app:layout_constraintStart_toEndOf="@+id/lb_matiere" />
 
     <EditText
         android:id="@+id/txtnb_temps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginBottom="48dp"
+        android:layout_width="220dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="56dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/txt_description"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/rd_degradable"
+        app:layout_constraintStart_toEndOf="@+id/lb_temps" />
 
     <EditText
         android:id="@+id/txt_description"
-        android:layout_width="244dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="279dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="99dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/rd_degradable"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_annuler"
+        app:layout_constraintStart_toEndOf="@+id/lb_description" />
 
     <RadioGroup
         android:id="@+id/rd_degradable"
-        android:layout_width="179dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginBottom="103dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_add"
+        android:layout_width="375dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="78dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_description"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -69,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="85dp"
         android:layout_marginBottom="40dp"
-        android:text="Button"
+        android:text="@string/btn_annuler"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -79,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:layout_marginBottom="40dp"
-        android:text="Button"
+        android:text="@string/btn_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_annuler" />
 
@@ -87,10 +82,10 @@
         android:id="@+id/lb_matiere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginBottom="50dp"
-        android:text="TextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="70dp"
         android:labelFor="@id/spin_matiere"
+        android:text="@string/lb_matiere"
         app:layout_constraintBottom_toTopOf="@+id/lb_temps"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -98,21 +93,21 @@
         android:id="@+id/lb_temps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginBottom="59dp"
-        android:text="TextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="64dp"
         android:labelFor="@id/txtnb_temps"
-        app:layout_constraintBottom_toTopOf="@+id/txt_description"
+        android:text="@string/lb_temps"
+        app:layout_constraintBottom_toTopOf="@+id/rd_degradable"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/lb_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginBottom="207dp"
-        android:text="TextView"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="126dp"
         android:labelFor="@id/txt_description"
+        android:text="@string/lb_description"
         app:layout_constraintBottom_toTopOf="@+id/btn_annuler"
         app:layout_constraintStart_toStartOf="parent" />
 

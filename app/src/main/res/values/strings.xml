@@ -7,4 +7,10 @@
     <string name="tv_tps">Durée de vie :</string>
     <string name="tv_description">Impacte environemental :</string>
     <string name="tv_biodegradable">Biodégradable :</string>
+    <string name="txt_nom">Nom déchet </string>
+    <string name="btn_annuler">Annuler</string>
+    <string name="btn_add">Ajouter</string>
+    <string name="lb_matiere">Matiere principale</string>
+    <string name="lb_temps">Temps décomposition</string>
+    <string name="lb_description">Description</string>
 </resources>
