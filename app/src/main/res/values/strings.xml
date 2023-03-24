@@ -2,4 +2,9 @@
     <string name="app_name">MiniProjet</string>
     <string name="btn_ajout">Ajouter un déchet</string>
     <string name="btn_retour">Retour</string>
+    <string name="tv_dechet">Déchet :</string>
+    <string name="tv_materiaux">Matière :</string>
+    <string name="tv_tps">Durée de vie :</string>
+    <string name="tv_description">Impacte environemental :</string>
+    <string name="tv_biodegradable">Biodégradable :</string>
 </resources>
