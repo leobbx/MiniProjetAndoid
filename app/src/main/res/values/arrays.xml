@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="valeurs">
+        <item>Plastique</item>
+        <item>Verre</item>
+        <item>Chewing-gum</item>
+        <item>Carton</item>
+        <item>Papier</item>
+        <item>Mégots</item>
+        <item>Métal</item>
+        <item>Compostable</item>
+        <item>Electronique</item>
+        <item>Mobilier</item>
+        <item>Produit hygiénique</item>
+    </string-array>
+</resources>
