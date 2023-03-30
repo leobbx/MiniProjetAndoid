@@ -12,12 +12,12 @@ import java.util.List;
 
 public class AdapterPerso extends BaseAdapter {
     private Context context;
-    private List<String> valeurs;
+    private List<Dechet> valeurs;
     private int image = R.drawable.poubelle;
 
     private static LayoutInflater inflater = null;
 
-    public AdapterPerso(Context context, List<String> valeurs){
+    public AdapterPerso(Context context, List<Dechet> valeurs){
         this.context = context;
         this.valeurs = valeurs;
 
@@ -50,7 +50,7 @@ public class AdapterPerso extends BaseAdapter {
 
         TextView text = (TextView) retour.findViewById(R.id.tv_label);
         ImageView img = (ImageView) retour.findViewById(R.id.iv_img);
-        text.setText(valeurs.get(pos));
+        text.setText(valeurs.get(pos).getLabel());
         img.setImageResource(this.image);
 
         return retour;

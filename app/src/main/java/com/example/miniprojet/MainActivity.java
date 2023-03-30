@@ -19,7 +19,7 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private List<String> valeurs = new ArrayList<String>();
+    private List<Dechet> valeurs = new ArrayList<Dechet>();
     private AdapterPerso adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,12 @@ public class MainActivity extends AppCompatActivity {
 
         if(cur.moveToFirst()){
             do{
-                valeurs.add(cur.getString(cur.getColumnIndexOrThrow("nom")));
+                valeurs.add(new Dechet(cur.getString(cur.getColumnIndexOrThrow("nom")),
+                        cur.getString(cur.getColumnIndexOrThrow("matiere")),
+                        cur.getInt(cur.getColumnIndexOrThrow("tmp")),
+                        cur.getString(cur.getColumnIndexOrThrow("description")),
+                        cur.getInt(cur.getColumnIndexOrThrow("biodeg"))
+                ));
             } while (cur.moveToNext());
         }
 
@@ -63,7 +68,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
                 Intent intent = new Intent(MainActivity.this,InfoActivity.class);
-                intent.putExtra("information",valeurs.get(pos));
+                intent.putExtra("nom",valeurs.get(pos).getNom());
+                intent.putExtra("matiere",valeurs.get(pos).getMatiere());
+                intent.putExtra("tmp",valeurs.get(pos).getTmp());
+                intent.putExtra("description",valeurs.get(pos).getDescription());
+                intent.putExtra("biodeg",valeurs.get(pos).getBio());
                 startActivity(intent);
             }
         });

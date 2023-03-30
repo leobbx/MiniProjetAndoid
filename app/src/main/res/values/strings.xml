@@ -15,4 +15,6 @@
     <string name="lb_description">Description</string>
     <string name="rd_oui">Bio dégradable</string>
     <string name="rd_non">Non bio dégradable</string>
+    <string name="oui">Oui</string>
+    <string name="non">Non</string>
 </resources>
