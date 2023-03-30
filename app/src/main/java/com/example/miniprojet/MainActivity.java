@@ -2,7 +2,10 @@ package com.example.miniprojet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -23,6 +26,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ClientBD bdd = new ClientBD(this);
+
+        SQLiteDatabase bd = bdd.getReadableDatabase();
+
+        String[] col = {"nom","matiere","tmp","description","biodeg"};
+        String[] select = {};
+
+        Cursor cur = bd.query("dechet",col,"",select,null,null,"nom ASC");
+
+        if(cur.moveToFirst()){
+            do{
+                valeurs.add(cur.getString(cur.getColumnIndexOrThrow("nom")));
+            } while (cur.moveToNext());
+        }
+
+        cur.close();
+        bd.close();
+
         this.adapter = new AdapterPerso(getApplicationContext(), valeurs);
 
         Button btn_ajout = (Button) findViewById(R.id.btn_Ajout);
@@ -33,10 +54,8 @@ public class MainActivity extends AppCompatActivity {
         btn_ajout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uniqueId = UUID.randomUUID().toString();
-                valeurs.add(uniqueId);
-
-                adapter.notifyDataSetChanged();
+                Intent intent = new Intent(MainActivity.this,AddActivity.class);
+                startActivity(intent);
             }
         });
 
