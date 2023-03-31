@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MiniProject</string>
+    <string name="btn_ajout">Add trash</string>
+    <string name="btn_retour">return</string>
+    <string name="tv_dechet">Trash :</string>
+    <string name="tv_materiaux">Material :</string>
+    <string name="tv_tps">Life time :</string>
+    <string name="tv_description">Environmental impact :</string>
+    <string name="tv_biodegradable">Biodegradeble :</string>
+    <string name="txt_nom">Trash name </string>
+    <string name="btn_annuler">Cancel</string>
+    <string name="btn_add">Add</string>
+    <string name="lb_matiere">Main material</string>
+    <string name="lb_temps">Decomposition time</string>
+    <string name="lb_description">Description</string>
+    <string name="rd_oui">Biodegradable</string>
+    <string name="rd_non">Not biodegradable</string>
+    <string name="oui">Biodegradable : Yes</string>
+    <string name="non">Biodegradable : No</string>
+    <string name="btn_menu_quitter">Quite</string>
+    <string name="btn_menu_retour">Return</string>
+</resources>

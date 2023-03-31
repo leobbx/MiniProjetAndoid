@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="valeurs">
+        <item>Plastic</item>
+        <item>Glass</item>
+        <item>Cardboard</item>
+        <item>Paper</item>
+        <item>Metal</item>
+        <item>Compostable</item>
+        <item>Wood</item>
+        <item>No materials to inform</item>
+    </string-array>
+</resources>

@@ -13,8 +13,8 @@
     <string name="lb_matiere">Matiere principale</string>
     <string name="lb_temps">Temps décomposition</string>
     <string name="lb_description">Description</string>
-    <string name="rd_oui">Bio dégradable</string>
-    <string name="rd_non">Non bio dégradable</string>
+    <string name="rd_oui">Biodégradable</string>
+    <string name="rd_non">Non biodégradable</string>
     <string name="oui">Biodégradable : Oui</string>
     <string name="non">Biodégradable : Non</string>
     <string name="btn_menu_quitter">Quitter</string>
