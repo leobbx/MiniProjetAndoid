@@ -26,9 +26,9 @@ public class InfoActivity extends AppCompatActivity {
         tv_tmp.setText(tv_tmp.getText()+" "+String.format("%d ans", getIntent().getIntExtra("tmp", 0)));
         tv_desc.setText(tv_desc.getText()+" "+getIntent().getStringExtra("description"));
         if(getIntent().getBooleanExtra("biodeg",false)){
-            tv_bio.setText(tv_bio.getText()+" "+String.format("%s",R.string.oui));
+            tv_bio.setText(R.string.oui);
         } else {
-            tv_bio.setText(tv_bio.getText()+" "+String.format("%s",R.string.non));
+            tv_bio.setText(R.string.non);
         }
 
         btn_retour.setOnClickListener(new View.OnClickListener() {
