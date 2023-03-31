@@ -17,4 +17,6 @@
     <string name="rd_non">Non bio dégradable</string>
     <string name="oui">Biodégradable : Oui</string>
     <string name="non">Biodégradable : Non</string>
+    <string name="btn_menu_quitter">Quitter</string>
+    <string name="btn_menu_retour">Retour</string>
 </resources>
