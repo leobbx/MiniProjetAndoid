@@ -17,7 +17,8 @@
         android:text="@string/txt_nom"
         app:layout_constraintBottom_toTopOf="@+id/spin_matiere"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
 
     <Spinner
         android:id="@+id/spin_matiere"
@@ -44,7 +45,7 @@
         android:layout_width="279dp"
         android:layout_height="103dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
@@ -56,7 +57,7 @@
         android:layout_width="377dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="24dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/txt_description"
         app:layout_constraintStart_toStartOf="parent">
@@ -70,7 +71,7 @@
 
         <RadioButton
             android:id="@+id/rd_non"
-            android:layout_width="192dp"
+            android:layout_width="186dp"
             android:layout_height="wrap_content"
             android:text="@string/rd_non" />
 
@@ -122,8 +123,8 @@
         android:id="@+id/lb_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="126dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="64dp"
         android:labelFor="@id/txt_description"
         android:text="@string/lb_description"
         app:layout_constraintBottom_toTopOf="@+id/btn_annuler"

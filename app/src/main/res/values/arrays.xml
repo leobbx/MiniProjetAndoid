@@ -3,14 +3,11 @@
     <string-array name="valeurs">
         <item>Plastique</item>
         <item>Verre</item>
-        <item>Chewing-gum</item>
         <item>Carton</item>
         <item>Papier</item>
-        <item>Mégots</item>
-        <item>Métal</item>
+        <item>Métaux</item>
         <item>Compostable</item>
-        <item>Electronique</item>
-        <item>Mobilier</item>
-        <item>Produit hygiénique</item>
+        <item>Bois</item>
+        <item>Pas de matière principale à renseigner</item>
     </string-array>
 </resources>
