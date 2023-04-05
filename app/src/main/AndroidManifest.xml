@@ -26,6 +26,9 @@
         <activity
             android:name=".AddActivity">
         </activity>
+        <activity
+            android:name=".LogActivity">
+        </activity>
     </application>
 
 </manifest>

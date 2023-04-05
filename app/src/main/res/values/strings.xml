@@ -19,4 +19,9 @@
     <string name="non">Biodégradable : Non</string>
     <string name="btn_menu_quitter">Quitter</string>
     <string name="btn_menu_retour">Retour</string>
+    <string name="txt_identifier">Identifiez-vous</string>
+    <string name="edit_txt_nom">Nom créateur</string>
+    <string name="edit_txt_mail">Adresse mail créateur</string>
+    <string name="btn_annl">Annuler</string>
+    <string name="btn_valider">Valider</string>
 </resources>

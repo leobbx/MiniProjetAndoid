@@ -67,13 +67,15 @@
             android:layout_width="188dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/rd_oui" />
+            android:text="@string/rd_oui"
+            android:value= "1"/>
 
         <RadioButton
             android:id="@+id/rd_non"
             android:layout_width="186dp"
             android:layout_height="wrap_content"
-            android:text="@string/rd_non" />
+            android:text="@string/rd_non"
+            android:value = "0"/>
 
     </RadioGroup>
 

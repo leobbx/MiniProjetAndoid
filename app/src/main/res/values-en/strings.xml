@@ -19,4 +19,9 @@
     <string name="non">Biodegradable : No</string>
     <string name="btn_menu_quitter">Quite</string>
     <string name="btn_menu_retour">Return</string>
+    <string name="txt_identifier">Log In</string>
+    <string name="edit_txt_nom">Name creator</string>
+    <string name="edit_txt_mail">E-mail creator</string>
+    <string name="btn_annl">Return</string>
+    <string name="btn_valider">Confirm</string>
 </resources>

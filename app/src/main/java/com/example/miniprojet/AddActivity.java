@@ -1,9 +1,14 @@
 package com.example.miniprojet;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +32,11 @@ public class AddActivity extends AppCompatActivity {
         Spinner spin = (Spinner) findViewById(R.id.spin_matiere);
         String [] valeurs = getResources().getStringArray(R.array.valeurs);
         Button btn_annuler = (Button) findViewById(R.id.btn_annuler);
+        Button btn_Ajout = (Button) findViewById(R.id.btn_add);
+        EditText txt_name = (EditText) findViewById(R.id.txt_nom);
+        EditText txt_temps = (EditText) findViewById(R.id.txtnb_temps);
+        RadioGroup rd_bio = (RadioGroup) findViewById(R.id.rd_degradable);
+        EditText txt_description = (EditText) findViewById(R.id.txt_description);
 
         this.listeValeurs = new ArrayList<>();
         Collections.addAll(this.listeValeurs,valeurs);
@@ -38,6 +48,19 @@ public class AddActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        btn_Ajout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddActivity.this,LogActivity.class);
+                intent.putExtra("nom",txt_name.getText());
+                intent.putExtra("matiere", listeValeurs.get(i));
+                intent.putExtra("temps",txt_temps.getText());
+                intent.putExtra("bio",rd_bio.getCheckedRadioButtonId());
+                intent.putExtra("description",txt_description.getText());
+                startActivity(intent);
             }
         });
     }
