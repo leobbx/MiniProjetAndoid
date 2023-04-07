@@ -13,8 +13,8 @@ public class ClientBD extends SQLiteOpenHelper {
 
     public final String SQL_CREATE = "CREATE TABLE dechet (id INTEGER PRIMARY KEY, nom VARCHAR(50)," +
             "  matiere VARCHAR(50), tmp int, description VARCHAR(500), biodeg BOOLEAN, nomPub VARCHAR(50)," +
-            " prenomPub VARCHAR(50), emailPub VARCHAR(80))";
-    public final String SQL_DATA = "INSERT INTO dechet(nom,matiere,tmp,description,biodeg) ";
+            "emailPub VARCHAR(80))";
+    public final String SQL_DATA = "INSERT INTO dechet(nom,matiere,tmp,description,biodeg,nomPub,emailPub)";
     public final String SQL_DELETE = "DROP TABLE IF EXISTS dechet";
 
     public ClientBD(@Nullable Context context) {

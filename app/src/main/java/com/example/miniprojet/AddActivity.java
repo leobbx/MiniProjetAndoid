@@ -56,7 +56,7 @@ public class AddActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AddActivity.this,LogActivity.class);
                 intent.putExtra("nom",txt_name.getText());
-                intent.putExtra("matiere", listeValeurs.get(i));
+                intent.putExtra("matiere",spin.getSelectedItem().toString());
                 intent.putExtra("temps",txt_temps.getText());
                 intent.putExtra("bio",rd_bio.getCheckedRadioButtonId());
                 intent.putExtra("description",txt_description.getText());
