@@ -20,17 +20,18 @@ public class InfoActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflaterMenu = getMenuInflater();
         inflaterMenu.inflate(R.menu.menu_deroulant,menu);
+        inflaterMenu.inflate(R.menu.menu_sub,menu);
         return true;
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()) {
-            case R.id.quit:
-                System.exit(10);
-                break;
             case R.id.ajout:
                 Intent intent = new Intent(InfoActivity.this,AddActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.btnquiter:
+                finish();
                 break;
             default:
                 return super.onOptionsItemSelected(item);

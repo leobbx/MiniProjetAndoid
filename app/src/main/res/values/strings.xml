@@ -24,6 +24,5 @@
     <string name="edit_txt_mail">Adresse mail créateur</string>
     <string name="btn_annl">Annuler</string>
     <string name="btn_valider">Valider</string>
-    <string name="quit_app">Retour</string>
     <string name="ajout">Ajouter déchet</string>
 </resources>
