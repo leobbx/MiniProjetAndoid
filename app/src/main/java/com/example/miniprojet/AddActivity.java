@@ -55,11 +55,11 @@ public class AddActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AddActivity.this,LogActivity.class);
-                intent.putExtra("nom",txt_name.getText());
+                intent.putExtra("nom",txt_name.getText().toString());
                 intent.putExtra("matiere",spin.getSelectedItem().toString());
-                intent.putExtra("temps",txt_temps.getText());
+                intent.putExtra("temps",txt_temps.getText().toString());
                 intent.putExtra("bio",rd_bio.getCheckedRadioButtonId());
-                intent.putExtra("description",txt_description.getText());
+                intent.putExtra("description",txt_description.getText().toString());
                 startActivity(intent);
             }
         });
