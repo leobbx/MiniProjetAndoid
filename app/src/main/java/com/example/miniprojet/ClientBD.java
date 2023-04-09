@@ -16,9 +16,7 @@ public class ClientBD extends SQLiteOpenHelper {
             " emailPub VARCHAR(80) NOT NULL) ";
 
     public final String SQL_DELETE = "DROP TABLE IF EXISTS dechet";
-
-
-
+    
     public ClientBD(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -32,17 +30,5 @@ public class ClientBD extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int ov, int nv) {
         db.execSQL(SQL_DELETE);
         onCreate(db);
-    }
-
-    public void deleteCourse(String dechet) {
-
-        // on below line we are creating
-        // a variable to write our database.
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        // on below line we are calling a method to delete our
-        // course and we are comparing it with our course name.
-        db.delete("dechet", "nom=?", new String[]{dechet});
-        db.close();
     }
 }
