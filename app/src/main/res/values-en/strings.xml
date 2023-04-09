@@ -24,4 +24,6 @@
     <string name="edit_txt_mail">E-mail creator</string>
     <string name="btn_annl">Return</string>
     <string name="btn_valider">Confirm</string>
+    <string name="quit_app">Cancel</string>
+    <string name="ajout">Add trash</string>
 </resources>

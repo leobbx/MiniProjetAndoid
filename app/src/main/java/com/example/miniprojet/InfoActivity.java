@@ -1,5 +1,7 @@
 package com.example.miniprojet;
 
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -7,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,12 +19,22 @@ public class InfoActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflaterMenu = getMenuInflater();
-        inflaterMenu.inflate(R.menu.menu_sub,menu);
+        inflaterMenu.inflate(R.menu.menu_deroulant,menu);
         return true;
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
-        finish();
+        switch (item.getItemId()) {
+            case R.id.quit:
+                System.exit(10);
+                break;
+            case R.id.ajout:
+                Intent intent = new Intent(InfoActivity.this,AddActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
         return super.onOptionsItemSelected(item);
     }
     @Override
