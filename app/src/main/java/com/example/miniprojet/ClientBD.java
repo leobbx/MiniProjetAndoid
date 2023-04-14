@@ -16,7 +16,7 @@ public class ClientBD extends SQLiteOpenHelper {
             " emailPub VARCHAR(80) NOT NULL) ";
 
     public final String SQL_DELETE = "DROP TABLE IF EXISTS dechet";
-    
+
     public ClientBD(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
